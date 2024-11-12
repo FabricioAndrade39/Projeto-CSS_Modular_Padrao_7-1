@@ -1,7 +1,7 @@
 {
   "name": "sass",
   "version": "1.0.0",
-  "description": "Modulo SASS",
+  "description": "projeto de pagina de captura",
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass sass/main.scss css/style.css -w",
