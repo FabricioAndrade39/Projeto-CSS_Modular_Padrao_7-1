@@ -1,0 +1,25 @@
+// Este arquivo contém variáveis, functions, mixins e includes
+
+$cinza: #4b4d4d;
+$cinza-medio: #e1e1e1;
+$branco-gelo: #f1f1f1;
+$azul: #1c415c;
+$preto: #1a1b1f;
+$amarelo: #ffd24a;
+$amarelo-escuro: #7d5e00;
+
+//Mixins
+
+@mixin flex(
+  $direction: row,
+  $wrap: nowrap,
+  $align: stretch,
+  $justify: start,
+  $gap: 0
+) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}

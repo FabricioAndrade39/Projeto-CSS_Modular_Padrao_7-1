@@ -1,0 +1,14 @@
+// This file contains all styles related to layouts.
+
+.section {
+  display: flex;
+  flex-flow: column;
+  padding: 6.1rem 2rem;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  max-width: 100rem;
+  margin: auto;
+}

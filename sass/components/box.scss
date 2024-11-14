@@ -1,0 +1,78 @@
+.box {
+  z-index: 1;
+  position: relative;
+  @include flex($direction: column, $align: center, $gap: 2rem);
+  padding: 3.12rem 2rem;
+  background-color: $cinza-medio;
+  max-width: 50rem;
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 1.2rem 0.2rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 6.1rem;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(25%, -25%);
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: $cinza-medio;
+    border-radius: 50%;
+    padding: 1.1rem;
+    box-shadow: inset 0 0 0.8rem rgba($preto, 0.2);
+  }
+
+  &__titles {
+    @include flex(
+      $direction: column,
+      $align: center,
+      $justify: start,
+      $gap: 0.65rem
+    );
+
+    &__title {
+      font-size: 4.88rem;
+      font-weight: 700;
+      line-height: 1;
+      color: $azul;
+      text-align: center;
+    }
+
+    &__subtitle {
+      font-size: 2.76rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: $cinza;
+    }
+  }
+
+  &__list {
+    @include flex($direction: column, $gap: 0.82rem, $justify: start);
+    list-style: none;
+    font-size: 1.92rem;
+    line-height: 1.2;
+
+    &__item {
+      @include flex($gap: 0.82rem, $align: start);
+
+      .box-icon {
+        width: 1.8rem;
+        margin-top: 0.21rem;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__title-rodape {
+    font-size: 2.76rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
