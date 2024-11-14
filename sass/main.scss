@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
+// 1. Configurations and Helpers
+@import 'abstracts/helpers';
+
 // 2. Base stuff
-@use 'base/base';
-@use 'base/fonts';
-@use 'base/helpers';
-@use 'base/typography';
+@import 'base/base', 'base/typography';
 
 // 3. Layout-related sections
-@use 'layout/footer';
+@import 'layout/layout';
 
 // 4. Components
-@use 'components/button';
+@import 'components/button', 'components/box';
 
 // 5. Pages
-@use 'pages/inscricao';
+@import 'pages/inscricao';

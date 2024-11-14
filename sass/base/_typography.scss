@@ -1,5 +1,12 @@
-@use '../abstracts';
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $preto;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
 
-h1 {
-  color: green;
+.img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
 }
