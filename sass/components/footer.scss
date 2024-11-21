@@ -1,0 +1,24 @@
+.footer {
+  padding: 4.88rem 2rem;
+
+  .container--rodape {
+    @include flex($align: center, $justify: end, $gap: 0.65rem);
+
+    @include respond(small) {
+      justify-content: center;
+    }
+
+    .logo-hashtag {
+      width: 3.7rem;
+      height: 3.7rem;
+    }
+
+    .box-text {
+      @include flex($align: center, $gap: 0.8rem);
+
+      a {
+        color: $preto;
+      }
+    }
+  }
+}

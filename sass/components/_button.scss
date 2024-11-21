@@ -10,7 +10,11 @@
   font-size: 1.92rem;
 }
 
-.btn--hero {
+.btn--center {
+  align-self: center;
+}
+
+.btn--yellow {
   background-color: $amarelo;
   border-color: $amarelo-escuro;
   color: darken($azul, 15%);

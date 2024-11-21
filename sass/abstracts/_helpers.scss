@@ -1,6 +1,7 @@
 // Este arquivo contém variáveis, functions, mixins e includes
 
 $cinza: #4b4d4d;
+$branco: #fff;
 $cinza-medio: #e1e1e1;
 $branco-gelo: #f1f1f1;
 $azul: #1c415c;
@@ -22,4 +23,37 @@ $amarelo-escuro: #7d5e00;
   align-items: $align;
   justify-content: $justify;
   gap: $gap;
+}
+
+@mixin respond($tamanho) {
+  @if $tamanho == big {
+    @media (max-width: 60.625em) {
+      @content;
+    }
+  } @else if $tamanho == medium {
+    @media (max-width: 54.125em) {
+      @content;
+    }
+  } @else if $tamanho == small {
+    @media (max-width: 48.125em) {
+      @content;
+    }
+  } @else if $tamanho == big-small {
+    @media (max-width: 30em) {
+      @content;
+    }
+  }
+}
+
+//Extends
+
+%title {
+  font-size: 4.88rem;
+  line-height: 1;
+}
+
+%subtitle {
+  font-size: 2.76;
+  line-height: 1.2;
+  font-weight: 700;
 }

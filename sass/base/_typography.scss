@@ -1,3 +1,7 @@
+/**
+ * Basic typography style for copy text
+ */
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: $preto;
@@ -9,4 +13,12 @@ body {
   max-width: 100%;
   width: 100%;
   display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
 }
