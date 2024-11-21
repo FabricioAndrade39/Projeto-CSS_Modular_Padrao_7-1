@@ -5,6 +5,10 @@
   flex-flow: column;
   padding: 6.1rem 2rem;
   overflow: hidden;
+
+  @include respond(big-small) {
+    padding: 3.9rem 2rem;
+  }
 }
 
 .container {

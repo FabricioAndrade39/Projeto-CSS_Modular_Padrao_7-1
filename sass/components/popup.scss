@@ -1,0 +1,64 @@
+.popup {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($branco, 0.925);
+  backdrop-filter: blur(2.5px);
+
+  &__container {
+    @include flex($direction: column, $gap: 2rem);
+    position: relative;
+    padding: 3.12rem;
+    border-radius: 2.5rem;
+    width: 50rem;
+    background-color: $branco;
+    box-shadow: inset 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.15);
+
+    &__inputs {
+      @include flex($direction: column, $gap: 0.82rem);
+
+      &__input {
+        border-radius: 5rem;
+        padding: 0.82rem 1.28rem;
+        border: 2px solid $preto;
+      }
+
+      &__input--amarelo {
+        border-color: $amarelo;
+      }
+    }
+  }
+
+  &__close {
+    @include flex($align: center, $justify: center);
+    position: absolute;
+    color: $branco;
+    font-weight: 700;
+    background-color: $amarelo;
+    border: 2px solid $preto;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 1.92rem;
+    line-height: 1;
+    transform: translate(25%, -25%);
+  }
+
+  &__close--amarelo {
+    border-color: $amarelo-escuro;
+  }
+}
+
+.popup--open {
+  display: flex;
+}

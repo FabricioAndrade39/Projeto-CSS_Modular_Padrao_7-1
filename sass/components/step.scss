@@ -1,0 +1,25 @@
+.steps {
+  @include flex($direction: column, $justify: start, $gap: 1.6rem);
+
+  &__header {
+    @include flex($justify: start, $gap: 0.8rem, $align: center);
+
+    &__box-icon {
+      width: 4.3rem;
+      height: 4.3rem;
+      border-radius: 0.8rem;
+      background-color: lighten($azul, 10%);
+      padding: 0.82rem;
+    }
+
+    &__title {
+      font-size: 2.76rem;
+      line-height: 1.2;
+      font-weight: 700;
+
+      &__blue {
+        color: lighten($azul, 10%);
+      }
+    }
+  }
+}
